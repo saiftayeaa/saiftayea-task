@@ -1,0 +1,80 @@
+        :root {
+            --Green: hsl(75, 94%, 57%);
+            --White: hsl(0, 0%, 100%);
+            --Grey: hsl(0, 0%, 20%);
+            --Dark-Grey: hsl(0, 0%, 12%);
+            --Off-Black: hsl(0, 0%, 8%);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--Off-Black);
+            color: var(--White);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .profile-card {
+            background-color: var(--Dark-Grey);
+            padding: 32px;
+            border-radius: 12px;
+            max-width: 380px;
+            width: 90%;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+        }
+
+        .profile-card h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .location {
+            color: var(--Green);
+            font-weight: 600;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .bio {
+            color: var(--White);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-links li {
+            margin-bottom: 16px;
+        }
+
+        .social-links a {
+            display: block;
+            background-color: var(--Grey);
+            color: var(--White);
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--Green);
+            color: var(--Off-Black);
+        }
